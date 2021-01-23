@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Suez One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <!-- Custom CSS -->
     <link rel = "stylesheet" href="styles.css">
   </head>
@@ -57,7 +58,7 @@
     <div class="container py-5">
       <div class="row mx-0">
         <div class="col-12 text-center mb-5">
-          <h3 class="text_green font_suez">SERVICES WE PROVIDE</h3>
+          <h3 class="font_suez">SERVICES WE PROVIDE</h3>
         </div>
         <div class="col-12 col-lg-4">
           <div class="service_card p-0">
@@ -65,7 +66,7 @@
               <h4 class="service_name d-inline p-2 text-white bg_blue">MULTIGYM</h4>
             </div>
             <div class="pb-4 px-3">
-              <ul class="list-unstyled mb-3">
+              <ul class="list-unstyled font_josefin mb-3">
                 <li class="mb-1 text-secondary">
                   <span class="fa fa-check text_blue"></span>
                   Modern equipment
@@ -92,7 +93,7 @@
               <h4 class="service_name d-inline p-2 text-white bg_orange">STEAM BATH</h4>
             </div>
             <div class="pb-4 px-3">
-              <ul class="list-unstyled mb-3">
+              <ul class="list-unstyled font_josefin mb-3">
                 <li class="mb-1 text-secondary">
                   <span class="fa fa-check text_orange"></span>
                   Fast and easy bath
@@ -119,7 +120,7 @@
               <h4 class="service_name d-inline p-2 text-white bg_green">BODY MASSAGE</h4>
             </div>
             <div class="pb-4 px-3">
-              <ul class="list-unstyled mb-3">
+              <ul class="list-unstyled font_josefin mb-3">
                 <li class="mb-1 text-secondary">
                   <span class="fa fa-check text_green"></span>
                   Skilled professionals
@@ -150,8 +151,8 @@
     <script>
       $(document).ready(function () {
         $(window).scroll(function () {
-          $('#Navbar').toggleClass("navbar_scrolled", ($(window).scrollTop() > 100));
-          $('.navbar_link').toggleClass("navbar_link_scrolled", ($(window).scrollTop() > 100));
+          $('#Navbar').toggleClass("navbar_scrolled", ($(window).scrollTop() > ($(window).height() * 0.7)));
+          $('.navbar_link').toggleClass("navbar_link_scrolled", ($(window).scrollTop() > ($(window).height() * 0.7)));
         });
       });
     </script>
