@@ -1,0 +1,46 @@
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none !important;
+}
+.font_suez{
+  font-family: 'Suez One';
+}
+.font_times{
+  font-family: 'Times New Roman', Times, serif;
+}
+.text_lightgrey{
+  color: lightgray !important;
+}
+.text_green{
+  color: #44EC1D !important;
+}
+#Navbar{
+  background: transparent;
+}
+.navbar_scrolled{
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+.navbar_link{
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  color: lightgray !important;
+}
+.navbar_link:hover{
+  color: white !important;
+}
+#header{
+  background-color: black;
+  height: 70vh;
+}
+#header_container{
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,1)), url(images/header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-position: right;
+}
