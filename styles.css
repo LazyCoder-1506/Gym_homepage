@@ -36,6 +36,9 @@ a{
 .bg_orange{
   background-color: #FFC101;
 }
+.dark_bg{
+  background-color: #00022E;
+}
 #Navbar{
   background-color: rgba(0,0,0,0);
 }
@@ -98,6 +101,47 @@ a{
 .button_raise:hover{
   box-shadow: 0 3px 5px 2px lightgrey;
 }
-.dark_bg{
-  background-color: #00022E;
+.membership_card{
+  position: relative;
+  height: 70vh;
+  box-shadow: 0px 2px 20px 0px #ccc;
+  border-radius: 10px;
+}
+.membership_bg{
+  height: 40%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: 100% auto;
+}
+#regular{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/regular.jpg);
+}
+#pro{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/pro.jpg);
+}
+#elite{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/elite.jpg);
+}
+.membership_info{
+  padding-top: 25%;
+}
+.membership_profile{
+  position: absolute;
+  width: 30%;
+  top: 40%;
+  left: 35%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  box-shadow: 0px 5px 20px 0px lightgrey;
+}
+.membership_button{
+  background-color: transparent;
+  border: 2px solid #2227A4;
+  color: #2227A4;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.membership_button:hover{
+  background-color: #2227A4;
+  color: #44EC1D;
 }
