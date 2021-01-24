@@ -39,6 +39,9 @@ a{
 .dark_bg{
   background-color: #00022E;
 }
+.bg_light{
+  background-color: #f8f8f8;
+}
 #Navbar{
   background-color: rgba(0,0,0,0);
 }
@@ -144,4 +147,44 @@ a{
 .membership_button:hover{
   background-color: #2227A4;
   color: #44EC1D;
+}
+.testimonial_slide{
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+.testimonial_text{
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.carousel-control-prev{
+  background-color : #44EC1D;
+  height : 40px;
+  opacity : 1;
+  width : 40px;
+  border-radius: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: -20px;
+}
+.carousel-control-prev:hover{
+  opacity : 1;
+  background-color : darkgreen;
+}
+.carousel-control-next{
+  background-color : #44EC1D;
+  right : 0;
+  height : 40px;
+  opacity : 1;
+  width : 40px;
+  border-radius: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  right: -20px;
+}
+.carousel-control-next:hover{
+  opacity : 1;
+  background-color : darkgreen;
 }

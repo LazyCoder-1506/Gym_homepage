@@ -20,7 +20,7 @@
   <body>
     <nav class="navbar navbar-expand-lg fixed-top" id="Navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">RSFS</a>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" height="45px" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -260,7 +260,72 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <div class="w-100 bg_light py-5">
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-12 text-center my-3">
+            <h2>Testimonials</h2>
+          </div>
+          <div class="col-12 col-lg-6 text-center text-lg-left mb-3" id="counter_div">
+            <h1 class="font_josefin mb-4 count">100</h1>
+            <h5 class="text-secondary font_josefin">Our member strength at present. Here is what some of them have to say about Real Steel Fitness Studio.</h5>
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <div id="testimonial_carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item px-2 active">
+                  <div class="testimonial_slide bg-white p-3">
+                    <h1 class="text_green mb-2">
+                      <span class="fa fa-quote-left"></span>
+                    </h1>
+                    <p class="font_josefin text-secondary testimonial_text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <p class="font_times"><i>John Doe, Instructor</i></p>
+                  </div>
+                </div>
+                <div class="carousel-item px-2">
+                  <div class="testimonial_slide bg-white p-3">
+                    <h1 class="text_green mb-2">
+                      <span class="fa fa-quote-left"></span>
+                    </h1>
+                    <p class="font_josefin text-secondary testimonial_text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <p class="font_times"><i>Jack John, Member since 2019</i></p>
+                  </div>
+                </div>
+                <div class="carousel-item px-2">
+                  <div class="testimonial_slide bg-white p-3">
+                    <h1 class="text_green mb-2">
+                      <span class="fa fa-quote-left"></span>
+                    </h1>
+                    <p class="font_josefin text-secondary testimonial_text">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <p class="font_times"><i>Alice King, Member since 2020</i></p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#testimonial_carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </a>
+              <a class="carousel-control-next" href="#testimonial_carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
@@ -269,6 +334,31 @@
         $(window).scroll(function () {
           $('#Navbar').toggleClass("navbar_scrolled", ($(window).scrollTop() > ($(window).height() * 0.7)));
           $('.navbar_link').toggleClass("navbar_link_scrolled", ($(window).scrollTop() > ($(window).height() * 0.7)));
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var a = 0;
+        $(window).scroll(function() {
+
+          var oTop = $('#counter_div').offset().top - window.innerHeight;
+          if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.count').each(function() {
+              $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+              }, {
+                duration: 1000,
+                easing: 'swing',
+                step: function(now) {
+                  $(this).text(Math.ceil(now));
+                }
+              });
+            });
+            a = 1;
+          }
+
         });
       });
     </script>
