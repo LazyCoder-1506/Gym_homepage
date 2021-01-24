@@ -162,7 +162,7 @@ a{
   height : 40px;
   opacity : 1;
   width : 40px;
-  border-radius: 20px;
+  border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -170,7 +170,7 @@ a{
 }
 .carousel-control-prev:hover{
   opacity : 1;
-  background-color : darkgreen;
+  background-color : #39D714;
 }
 .carousel-control-next{
   background-color : #44EC1D;
@@ -178,7 +178,7 @@ a{
   height : 40px;
   opacity : 1;
   width : 40px;
-  border-radius: 20px;
+  border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -186,5 +186,17 @@ a{
 }
 .carousel-control-next:hover{
   opacity : 1;
-  background-color : darkgreen;
+  background-color : #39D714;
+}
+.footer_link:hover{
+  color: white !important;
+}
+.social_button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #00022E;
+}
+.social_button:hover{
+  background-color: #39D714;
 }
